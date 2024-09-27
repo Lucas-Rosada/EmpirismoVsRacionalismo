@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empirismo vs Racionalismo - Jogo</title>
+    <link rel="shortcut icon" href="assets/maumau.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="jogo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Seção para escolher os lados -->
+    <section id="player-setup" class="content-section">
+        <h2>Escolha seu lado</h2>
+        <div class="setup-container">
+            <div>
+                <label for="player1Side">Jogador 1, escolha seu lado:</label>
+                <select id="player1Side">
+                    <option value="empirismo">Empirismo</option>
+                    <option value="racionalismo">Racionalismo</option>
+                </select>
+            </div>
+            <div>
+                <label for="player2Side">Jogador 2, escolha seu lado:</label>
+                <select id="player2Side">
+                    <option value="empirismo">Empirismo</option>
+                    <option value="racionalismo">Racionalismo</option>
+                </select>
+            </div>
+            <button id="startGame">Começar o jogo</button>
+        </div>
+    </section>
+
+    <!-- Jogo -->
+    <section id="game-section" class="content-section" style="display: none;">
+        <h2>Jogo: Empirismo vs Racionalismo</h2>
+
+        <!-- Indicação do jogador que deve responder -->
+        <h3 id="currentPlayerDisplay">Jogador da vez: </h3>
+
+        <div id="board">
+            <div class="cell" id="cell1"></div>
+            <div class="cell" id="cell2"></div>
+            <div class="cell" id="cell3"></div>
+            <div class="cell" id="cell4"></div>
+            <div class="cell" id="cell5"></div>
+            <div class="cell" id="cell6"></div>
+            <div class="cell" id="cell7"></div>
+            <div class="cell" id="cell8"></div>
+            <div class="cell" id="cell9">Centro</div>
+        </div>
+
+        <div class="controls">
+            <button id="rollDice">Rolar Dado</button>
+            <p id="question">Pergunta aparecerá aqui</p>
+            <input type="text" id="playerAnswer" placeholder="Digite a letra da resposta (A, B, C ou D)">
+            <button id="submitAnswer">Enviar Resposta</button>
+        </div>
+
+        <div id="gameStatus">
+            <p>Jogador Empirismo está na posição: <span id="empirismoPos">0</span></p>
+            <p>Jogador Racionalismo está na posição: <span id="racionalismoPos">0</span></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Filosofia. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+</html>

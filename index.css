@@ -1,0 +1,273 @@
+/* Estilos gerais e reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f2e5c4; /* Cor de pergaminho */
+    color: #4a3c2b; /* Cor de texto marrom escuro */
+    line-height: 1.7;
+    padding: 0;
+    margin: 0;
+    background-image: url('https://www.transparenttextures.com/patterns/old-wall.png'); /* Textura de parede antiga */
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    padding: 100px 0 20px;
+    background-color: #8b5e3c; /* Marrom envelhecido */
+    position: relative;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #f4ecd8; /* Cor clara de pergaminho */
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #f4ecd8;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 40px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #f4ecd8;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4b483;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão do jogo */
+.play-game {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-game {
+    padding: 15px 30px;
+    background-color: #8b5e3c;
+    color: #f4ecd8;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-game:hover {
+    background-color: #b67852; /* Marrom mais claro ao hover */
+    transform: scale(1.05);
+}
+
+/* Seções de conteúdo */
+.content-section {
+    padding: 100px 10%;
+    background-color: #f4ecd8; /* Cor de pergaminho claro */
+    color: #4a3c2b;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+    margin-bottom: 50px;
+}
+
+.content-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #8b5e3c;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image-section {
+    flex: 1;
+    text-align: center;
+}
+
+.image-section img {
+    max-width: 300px;
+    border-radius: 10px;
+    border: 4px solid #8b5e3c;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s;
+}
+
+.image-section img:hover {
+    transform: scale(1.05);
+}
+
+.text-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #4a3c2b;
+}
+
+/* Seção de Comparação */
+.comparison-section {
+    padding: 100px 10%;
+    background-color: #f4ecd8;
+    text-align: center;
+}
+
+.comparison-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.comparison-item {
+    background-color: #dfd2b6;
+    padding: 40px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.comparison-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #8b5e3c;
+    margin-bottom: 20px;
+}
+
+.comparison-item p {
+    font-size: 1.1rem;
+    color: #4a3c2b;
+}
+
+.comparison-item:hover {
+    transform: scale(1.05);
+}
+
+/* Seção de Filósofos */
+.philosophers-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.philosopher-item {
+    text-align: center;
+    width: 200px;
+}
+
+.philosopher-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #8b5e3c;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.philosopher-item img:hover {
+    transform: scale(1.05);
+}
+
+.philosopher-item p {
+    margin-top: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #4a3c2b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #8b5e3c;
+    color: #f4ecd8;
+    font-family: 'Georgia', serif;
+    border-top: 3px solid #d4b483;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave no topo do footer */
+}
+
+/* Seção de Desenvolvedores */
+.developers-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.developer-item {
+    text-align: center;
+    width: 200px;
+}
+
+.developer-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #8b5e3c;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.developer-item img:hover {
+    transform: scale(1.05);
+}
+
+.developer-item p {
+    margin-top: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #4a3c2b;
+}
+
+.developer-item a {
+    color: #8b5e3c;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+}
+
+.developer-item a:hover {
+    color: #d4b483;
+}
